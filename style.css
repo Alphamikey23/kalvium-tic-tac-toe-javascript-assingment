@@ -1,0 +1,45 @@
+body {
+    background-color: dodgerblue;
+    margin: 0px;
+    
+}
+.title {
+    font-family: Fredoka;
+    font-size: 10rem;
+    text-align: center;
+    color: #FAB201;
+    -webkit-text-stroke: 5px white;
+    padding: 0px;
+    margin: 10px;
+}
+
+#big-box {
+    display: grid;
+    grid-template-columns: 180px 180px 180px;
+    grid-template-rows: 120px 120px 120px  ;
+    justify-content: center;
+    row-gap: 20px;
+    padding: 20px;
+
+
+    
+}
+
+#big-box {
+    border: 2px solid red;
+}
+
+/*#big-box > div {
+    background-color: white;
+}*/
+
+div[id^="small-box-"] {
+    background-color: white;
+    border-radius: 8px;
+    height: auto;
+    width: 150px;
+}
+footer {
+    color: white;
+    text-align: center;
+}
