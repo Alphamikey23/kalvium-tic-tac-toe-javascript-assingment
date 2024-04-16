@@ -3,46 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css" />
     <title>Tic-Tac-Toe Game</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body>
-    <p id="one" class="title">TIC TAC TOE</p>
-    <div id="big-box" >
-        <div id="small-box-one">
-            1
-        </div>
-        <div id="small-box-two">
-            2
-        </div>
-        <div id="small-box-three">
-            3
-        </div>
-        <div id="small-box-four">
-            4
-        </div>
-        <div id="small-box-five">
-            5
-        </div>
-        <div id="small-box-six">
-            6
-        </div>
-        <div id="small-box-seven">
-            7
-        </div>
-        <div id="small-box-eight">
-            8
-        </div>
-        <div id="small-box-nine">
-            9
-        </div>
+    <p class="title">TIC TAC TOE</p>
+    <div id="board" class="container">
+        <div class="cell" data-index="0"></div>
+        <div class="cell" data-index="1"></div>
+        <div class="cell" data-index="2"></div>
+        <div class="cell" data-index="3"></div>
+        <div class="cell" data-index="4"></div>
+        <div class="cell" data-index="5"></div>
+        <div class="cell" data-index="6"></div>
+        <div class="cell" data-index="7"></div>
+        <div class="cell" data-index="8"></div>
     </div>
+    <div class="win">Game Over!</div>
+    <button id="play">Play Again</button>
     <footer>
         <p>Made with &hearts; by Jay</p>
     </footer>
-    
+
+    <script src="app.js"></script>
 </body>
 </html>

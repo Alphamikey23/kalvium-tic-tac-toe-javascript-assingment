@@ -1,8 +1,8 @@
 body {
     background-color: dodgerblue;
-    margin: 0px;
-    
+    margin: 0px; 
 }
+
 .title {
     font-family: Fredoka;
     font-size: 10rem;
@@ -13,33 +13,45 @@ body {
     margin: 10px;
 }
 
-#big-box {
+.container {
     display: grid;
-    grid-template-columns: 180px 180px 180px;
-    grid-template-rows: 120px 120px 120px  ;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
     justify-content: center;
-    row-gap: 20px;
-    padding: 20px;
-
-
-    
+    align-items: center;
+    margin-top: 20px;
 }
 
-#big-box {
-    border: 2px solid red;
-}
-
-/*#big-box > div {
+.cell {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
     background-color: white;
-}*/
-
-div[id^="small-box-"] {
-    background-color: white;
+    align-items: center;
+    font-size: 2rem;
+    cursor: pointer;
     border-radius: 8px;
-    height: auto;
-    width: 150px;
 }
+
+.win {
+    display: none;
+    text-align: center; 
+    color: white; 
+    margin-top: 20px; 
+}
+
+.show {
+    display: block;
+}
+
 footer {
     color: white;
     text-align: center;
+}
+
+#play {
+    display: block;
+    margin: 20px auto; 
 }
